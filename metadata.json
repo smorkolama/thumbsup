@@ -1,0 +1,32 @@
+{
+  "2012/hyams-beach.jpg": {
+    "fileDate": 1402367362000,
+    "mediaDate": 1350672704000,
+    "mediaType": "photo"
+  },
+  "2012/port-stephens.jpg": {
+    "fileDate": 1402367362000,
+    "mediaDate": 1345911757000,
+    "mediaType": "photo"
+  },
+  "2012/port-stephens2.jpg": {
+    "fileDate": 1402367362000,
+    "mediaDate": 1345980461000,
+    "mediaType": "photo"
+  },
+  "2013/countdown.mp4": {
+    "fileDate": 1402367362000,
+    "mediaDate": 1402367362000,
+    "mediaType": "video"
+  },
+  "2013/port-douglas.jpg": {
+    "fileDate": 1402367362000,
+    "mediaDate": 1383083620000,
+    "mediaType": "photo"
+  },
+  "2013/port-douglas2.jpg": {
+    "fileDate": 1402367362000,
+    "mediaDate": 1383140156000,
+    "mediaType": "photo"
+  }
+}
