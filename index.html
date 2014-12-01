@@ -4,12 +4,9 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>2012</title>
+      <title></title>
       <link rel="stylesheet" href="public/reset.css" />
       <link rel="stylesheet" href="public/theme.css" />
-      <link rel="stylesheet" href="public/blueimp/css/blueimp-gallery.min.css">
-      <link rel="stylesheet" href="public/blueimp/css/blueimp-gallery-video.css">
-      <link rel="stylesheet" href="public/blueimp/css/blueimp-gallery-indicator.css">
   </head>
 
   <body>
@@ -19,85 +16,44 @@
       <h2>gallery</h2>
     </header>
 
-    <nav>
-      <ul>
-        <li class="active">
-          <a href="2012.html">2012</a>
-        </li>
-        <li >
-          <a href="2013.html">2013</a>
-        </li>
-      </ul>
-    </nav>
-
-    <ul id="gallery">
+    <ul id="galleries">
       <li>
-          <a href="media/large/2012/port-stephens.jpg"
-             data-download="media/original/2012/port-stephens.jpg">
-            <img src="media/thumbs/2012/port-stephens.jpg"
-                 width="120"
-                 height="120"
-                 alt="port-stephens.jpg" />
-          </a>
-      </li><li>
-          <a href="media/large/2012/port-stephens2.jpg"
-             data-download="media/original/2012/port-stephens2.jpg">
-            <img src="media/thumbs/2012/port-stephens2.jpg"
-                 width="120"
-                 height="120"
-                 alt="port-stephens2.jpg" />
-          </a>
-      </li><li>
-          <a href="media/large/2012/hyams-beach.jpg"
-             data-download="media/original/2012/hyams-beach.jpg">
-            <img src="media/thumbs/2012/hyams-beach.jpg"
-                 width="120"
-                 height="120"
-                 alt="hyams-beach.jpg" />
-          </a>
-      </li><li>
-          <a href="media/large/2012/landscape.jpg"
-             data-download="media/original/2012/landscape.jpg">
-            <img src="media/thumbs/2012/landscape.jpg"
-                 width="120"
-                 height="120"
-                 alt="landscape.jpg" />
-          </a>
+        <a href="2012.html">
+          <h3>2012</h3>
+          <div class="meta">
+            3 photos<br />
+            26 Aug 12 - 20 Oct 12
+          </div>
+            <ul class="grid">
+              <li><img src="media/thumbs/2012/port-stephens.jpg" /></li><li><img src="media/thumbs/2012/port-stephens2.jpg" /></li><li><img src="media/thumbs/2012/hyams-beach.jpg" /></li><li><img src="public/missing.png" /></li>
+            </ul>
+        </a>
+      </li>
+      <li>
+        <a href="2013.html">
+          <h3>2013</h3>
+          <div class="meta">
+            2 photos, 2 videos<br />
+            30 Oct 13 - 29 Nov 14
+          </div>
+            <ul class="grid">
+              <li><img src="media/thumbs/2013/port-douglas.jpg" /></li><li><img src="media/thumbs/2013/port-douglas2.jpg" /></li><li><img src="media/thumbs/2013/countdown.jpg" /></li><li><img src="media/thumbs/2013/seattle.jpg" /></li>
+            </ul>
+        </a>
+      </li>
+      <li>
+        <a href="2014.html">
+          <h3>2014</h3>
+          <div class="meta">
+            1 photos<br />
+            29 Nov 14 - 29 Nov 14
+          </div>
+            <ul class="grid">
+              <li><img src="media/thumbs/2014/landscape.jpg" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li>
+            </ul>
+        </a>
       </li>
     </ul>
-
-    <div id="blueimp-gallery" class="blueimp-gallery">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="download" href="#" target="_blank" download>Download</a>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div>
-
-    <script src="public/blueimp/js/blueimp-gallery.min.js"></script>
-    <script src="public/blueimp/js/blueimp-gallery-video.js"></script>
-    <script src="public/blueimp/js/blueimp-gallery-indicator.js"></script>
-
-    <script>
-      document.getElementById('gallery').onclick = function(event) {
-        event = event || window.event;
-        var target = event.target || event.srcElement,
-            link = target.src ? target.parentNode : target,
-            links = this.getElementsByTagName('a');
-        blueimp.Gallery(links, {
-          index: link,
-          event: event,
-          onslide: function (index, slide) {
-            var anchor = this.container.find('.download');
-            var url = this.list[index].getAttribute('data-download');
-            anchor[0].href = url;
-          }
-        });
-      };
-    </script>
 
 
   </body>

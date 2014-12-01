@@ -7,14 +7,6 @@
       "orientation": 1
     }
   },
-  "2012/landscape.jpg": {
-    "fileDate": 1417251208000,
-    "mediaType": "photo",
-    "exif": {
-      "date": null,
-      "orientation": 8
-    }
-  },
   "2012/port-stephens.jpg": {
     "fileDate": 1397730672000,
     "mediaType": "photo",
@@ -61,6 +53,14 @@
     "exif": {
       "date": null,
       "orientation": null
+    }
+  },
+  "2014/landscape.jpg": {
+    "fileDate": 1417251208000,
+    "mediaType": "photo",
+    "exif": {
+      "date": null,
+      "orientation": 8
     }
   }
 }
