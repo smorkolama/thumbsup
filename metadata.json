@@ -31,6 +31,14 @@
       "orientation": null
     }
   },
+  "2013/momentum.m2ts": {
+    "fileDate": 1417439019000,
+    "mediaType": "video",
+    "exif": {
+      "date": null,
+      "orientation": null
+    }
+  },
   "2013/port-douglas.jpg": {
     "fileDate": 1398500588000,
     "mediaType": "photo",
@@ -47,16 +55,8 @@
       "orientation": 1
     }
   },
-  "2013/seattle.mts": {
-    "fileDate": 1417236422000,
-    "mediaType": "video",
-    "exif": {
-      "date": null,
-      "orientation": null
-    }
-  },
   "2014/landscape.jpg": {
-    "fileDate": 1417251208000,
+    "fileDate": 1417437612000,
     "mediaType": "photo",
     "exif": {
       "date": null,
