@@ -37,6 +37,10 @@ var opts = yargs
       description: 'How to sort gallery folders (name | date)',
       default: 'date'
     },
+    'sort-reverse': {
+      description: 'Reverse sort gallery folders (true | false )',
+      default: true
+    },
     'css': {
       description: 'Extra CSS file for styling'
     },
@@ -60,6 +64,7 @@ index.build({
   originalPhotos:  opts['original-photos'] + '' === 'true',
   originalVideos:  opts['original-videos'] + '' === 'true',
   sortFolders:     opts['sort-folders'],
+  sortReverse:     opts['sort-reverse'] + '' === 'true',
   css:             opts['css'],
   googleAnalytics: opts['google-analytics']
 });

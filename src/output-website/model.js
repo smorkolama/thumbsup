@@ -81,11 +81,28 @@ exports.create = function(metadata, opts) {
 
   var chosenSort = sortFunctions[opts.sortFolders];
 
-  return _(metadata).map(fileInfo)
-                   .sortBy('date')
-                   .groupBy(byFolder)
-                   .map(folderInfo)
-                   .sortBy(chosenSort)
-                   .value();
+  if (opts.sortReverse)
+  {
+	  console.log("reversing sort");
+
+	  return _(metadata).map(fileInfo)
+							 .sortBy('date')
+							 .groupBy(byFolder)
+							 .map(folderInfo)
+							 .sortBy(chosenSort)
+							 .reverse()
+							 .value();
+  }
+  else
+  {
+	  console.log("regular sort");
+
+	  return _(metadata).map(fileInfo)
+							 .sortBy('date')
+							 .groupBy(byFolder)
+							 .map(folderInfo)
+							 .sortBy(chosenSort)
+							 .value();
+	}
 
 };
