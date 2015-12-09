@@ -83,7 +83,7 @@ exports.create = function(metadata, opts) {
 
   if (opts.sortReverse)
   {
-	  console.log("reversing sort");
+//	  console.log("reversing sort");
 
 	  return _(metadata).map(fileInfo)
 							 .sortBy('date')
@@ -95,7 +95,7 @@ exports.create = function(metadata, opts) {
   }
   else
   {
-	  console.log("regular sort");
+//	  console.log("regular sort");
 
 	  return _(metadata).map(fileInfo)
 							 .sortBy('date')
