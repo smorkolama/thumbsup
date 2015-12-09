@@ -27,7 +27,8 @@ exports.homepage = function(structure) {
       stats:    stats(folder.media),
       fromDate: date(_.min(folder.media, 'date').date),
       toDate:   date(_.max(folder.media, 'date').date),
-      grid:     grid(folder.media)
+//      grid:     grid(folder.media)
+		single:    single(folder.media)
     };
   });
   return {
@@ -71,5 +72,11 @@ function grid(media) {
     (media.length > 1) ? media[1].urls.thumb : 'public/missing.png',
     (media.length > 2) ? media[2].urls.thumb : 'public/missing.png',
     (media.length > 3) ? media[3].urls.thumb : 'public/missing.png'
+  ];
+}
+
+function single(media) {
+  return [
+    (media.length > 0) ? media[0].urls.thumb : 'public/missing.png',
   ];
 }
