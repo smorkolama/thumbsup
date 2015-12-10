@@ -154,4 +154,5 @@ width: 22%;
 /* captions */
 .lg-sub-html {
   bottom: 100px; /* always display above the thumbnails */
+  display: none; /* hide it */
 }
